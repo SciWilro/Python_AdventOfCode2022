@@ -35,3 +35,17 @@ print(f"The Elf we are looking for has {max} calories")
 # --------------------------------------------------------------------------- #
 # Tuple syntax for ternary operators:
 # https://blog.finxter.com/python-ternary-tuple/
+
+
+# --------------------------------------------------------------------------- #
+# Alternative Solution - Shortest
+# --------------------------------------------------------------------------- #
+
+with open(inputpath) as f:
+    max = []
+    for elf in f.read().split("\n\n"):
+        max.append(sum(int(i) for i in elf.split("\n") if i != ''))
+max.sort()
+
+print(f"The Elf we are looking for in Problem 1 has {max[-1]} calories")
+print(f"The top 3 for Problem 2 we are looking for has a total of {sum(max[-3:])} calories")
