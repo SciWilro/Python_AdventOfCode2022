@@ -5,3 +5,4 @@ __author__ = 'Wilro - https://github.com/SciWilro'
 from os import path
 inputpath = path.relpath("input/D02_input.txt")
 # --------------------------------------------------------------------------- #
+
