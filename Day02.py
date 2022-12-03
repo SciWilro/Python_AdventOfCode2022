@@ -86,3 +86,9 @@ with open(inputpath) as f:
         scores.append(get_outcome(m1,get_move(m1,res)))
 print(f"score: {sum(scores)}")
 
+# Shorter Alternative
+# Hardcode answers in list/dict
+
+# "Better" Alternative
+# Convert to numbers (Modular Arithmetic)
+# https://www.youtube.com/watch?v=lNFMyI3JBeY
